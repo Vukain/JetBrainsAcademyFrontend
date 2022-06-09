@@ -1,2 +1,2 @@
-# JetBrainsAcademyFrontend
-Projects from JetBrains Academy
+# JetBrains Frontend Academy
+Projects (tasks) from JetBrains/Hyperskill Academy
