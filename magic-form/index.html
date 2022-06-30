@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <title>Magic Form</title>
+</head>
+<body>
+<nav>
+    <a href="./index.html" id="form-link">Form</a>
+    <a href="./history.html" id="history-link">History</a>
+</nav>
+<form id="form">
+    <label for="first-name">First name<br>
+        <input id="first-name" name="first-name" onkeyup="saveData(this)" type="text"><br>
+    </label>
+    <label for="last-name">Last name<br>
+        <input id="last-name" name="last-name" onkeyup="saveData(this)" type="text"><br>
+    </label>
+    <label for="email">Email<br>
+        <input id="email" name="email" onkeyup="saveData(this)" type="text"><br>
+    </label>
+    <label for="phone">Phone<br>
+        <input id="phone" name="phone" onkeyup="saveData(this)" type="tel"><br>
+    </label>
+    <label for="company">Company<br>
+        <input id="company" name="company" onkeyup="saveData(this)" type="text"><br>
+    </label>
+    <label for="address">Address<br>
+        <input id="address" name="address" onkeyup="saveData(this)" type="text"><br>
+    </label>
+    <br>
+    <button id="submit-button" type="submit" onclick="clearInputs()">Submit Form</button>
+</form>
+<script src="index.js"></script>
+</body>
+</html>

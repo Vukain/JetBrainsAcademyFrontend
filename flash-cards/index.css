@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+}
+html, body {
+    font-family: Arial;
+    background-color: black;
+}
+
+.quiz {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#253345, #253345);
+}
+
+.question {
+    color: antiquewhite;
+    text-align: center;
+    padding: 2vh;
+    background-color: black;
+}
+
+.cards {
+    width: 50vh;
+    height: 50vh;
+    margin: 5vh auto;
+    background-color: antiquewhite;
+    display: grid;
+    gap: 2vh;
+    padding: 5vh;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 2vh;
+}
+
+
+.wrap {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    perspective: 70vw;
+    cursor: pointer;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.front, .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2vh;
+    backface-visibility: hidden;
+    background-color: #5b86ad;
+    transition: 1s;
+}
+
+.back {
+    transform: rotateY(180deg);
+
+    background-color: #9e5bad;
+
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+
+}
+
+.card:hover .back {
+    transform: rotateY(0deg);
+}

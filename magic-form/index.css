@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightcyan;
+    height: 100vh;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    padding: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+nav a:nth-child(1) {
+    margin-left: calc(25% - 0.5rem);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 3rem auto;
+}
+
+label {
+    font-weight: 600;
+    width: 50%;
+    margin: 1rem;
+}
+
+input {
+    font-family: inherit;
+    font-size: 1rem;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    width: 100%;
+    height: 3rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+}
+
+input:focus {
+    border: 3px solid lightgrey;
+}
+
+button {
+    font-family: inherit;
+    background-color: black;
+    color: #fff;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: 0;
+}
+
+/* history.html */
+.submit-history-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto 0 auto;
+    padding: 1.5rem 2rem;
+    width: 50vw;
+    height: fit-content;
+    border-radius: 1rem;
+    box-shadow: 3px 6px 3px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.submit-history-card p {
+    font-weight: 400;
+    margin: 0 0 1rem;
+}
+
+.submit-history-card button {
+    background-color: firebrick;
+    width: min-content;
+    margin: auto;
+}
