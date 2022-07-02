@@ -49,7 +49,3 @@ Rotating flashcards with answers to given question.
 Virtual Piano
 
 An app playing corresponding sounds for different keys.
-
-## Challenging
-
-xxx
